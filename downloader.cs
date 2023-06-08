@@ -15,7 +15,7 @@ namespace Downloader
 
         private static async Task BaixarArquivo(string url, string nomeDoArquivo)
         {
-            const int bufferSize = 1024*1024*1024; //1MB de buffer
+            const int bufferSize = 8192; //1MB de buffer
             using var client = new HttpClient();
 
             try
